@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  bootstrap="vendor/autoload.php"
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  colors="true"
+  testdox="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false"
+  stderr="true"
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <include>
+      <directory suffix=".php">src/</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="Assignment 6 Test Suite">
+      <file>tests/ModelTests/UserTest.php</file>
+	  <file>tests/ModelTests/CategoryTest.php</file>
+	  <file>tests/ModelTests/PostTest.php</file>
+	  <file>tests/ModelTests/PostVoteTest.php</file>
+	  <file>tests/ModelTests/PostBookmarkTest.php</file>
+	  <file>tests/ModelTests/CommentTest.php</file>
+	  <file>tests/ModelTests/CommentVoteTest.php</file>
+	  <file>tests/ModelTests/CommentBookmarkTest.php</file>
+	  <file>tests/ControllerTests/AuthControllerTest.php</file>
+	  <file>tests/ControllerTests/UserControllerTest.php</file>
+	  <file>tests/ControllerTests/CategoryControllerTest.php</file>
+	  <file>tests/ControllerTests/PostControllerTest.php</file>
+	  <file>tests/ControllerTests/PostVoteControllerTest.php</file>
+	  <file>tests/ControllerTests/PostBookmarkControllerTest.php</file>
+	  <file>tests/ControllerTests/CommentControllerTest.php</file>
+	  <file>tests/ControllerTests/CommentVoteControllerTest.php</file>
+	  <file>tests/ControllerTests/CommentBookmarkControllerTest.php</file>
+	  <file>tests/RouterTests/UserRouterTest.php</file>
+	  <file>tests/RouterTests/CategoryRouterTest.php</file>
+	  <file>tests/RouterTests/PostRouterTest.php</file>
+	  <file>tests/RouterTests/PostVoteRouterTest.php</file>
+	  <file>tests/RouterTests/PostBookmarkRouterTest.php</file>
+	  <file>tests/RouterTests/CommentRouterTest.php</file>
+	  <file>tests/RouterTests/CommentVoteRouterTest.php</file>
+	  <file>tests/RouterTests/CommentBookmarkRouterTest.php</file>
+	  <file>tests/BrowserTests/UserBrowserTest.php</file>
+	  <file>tests/BrowserTests/CategoryBrowserTest.php</file>
+	  <file>tests/BrowserTests/PostBrowserTest.php</file>
+	  <file>tests/BrowserTests/CommentBrowserTest.php</file>
+	  <file>tests/BrowserTests/PostVoteBrowserTest.php</file>
+	  <file>tests/BrowserTests/CommentVoteBrowserTest.php</file>
+	  <file>tests/BrowserTests/PostBookmarkBrowserTest.php</file>
+	  <file>tests/BrowserTests/CommentBookmarkBrowserTest.php</file>
+
+      <exclude>tests/ModelTests/ModelTest.php</exclude>
+      <exclude>tests/ControllerTests/ControllerTest.php</exclude>
+      <exclude>tests/RouterTests/RouterTest.php</exclude>
+      <exclude>tests/BrowserTests/BrowserTest.php</exclude>
+      <exclude>tests/AssignmentSixTest.php</exclude>
+    </testsuite>
+  </testsuites>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+  </php>
+</phpunit>
